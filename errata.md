@@ -59,7 +59,7 @@ You can also safely skip this command from the terminal and use a MySQL GUI clie
 
 ### :no_entry_sign: Page 53
 
-The text contains a statement that is technically incorrect about `docker-composer restart`:
+The text contains a statement that is technically incorrect about `docker-compose restart`:
 
 __Original text:__
 
