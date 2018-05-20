@@ -1,5 +1,13 @@
 # Docker for PHP Developers Errata
 
+Issue map:
+
+| Icon      | Description                                            |
+|-----------|--------------------------------------------------------|
+| :bug:     | This code doesn't work properly and/or has a bug in it |
+| :warning: | This isn't errata that breaks code listings, but perhaps is either confusing, grammatically incorrect, or has some other minor error or issue.     |
+
+
 ## Chapter 3: LAMP Baby!
 
 ### :warning: Page 26 & 27 - Confusing Example `RUN` Commands
