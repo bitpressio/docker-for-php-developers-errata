@@ -6,6 +6,7 @@ Issue map:
 |-----------|--------------------------------------------------------|
 | :bug:     | This code doesn't work properly and/or has a bug in it |
 | :warning: | This isn't errata that breaks code listings, but perhaps is either confusing, grammatically incorrect, or has some other minor error or issue.     |
+| :no_entry_sign: | Errors, incorrect information, invalid statements |
 
 
 ## Chapter 3: LAMP Baby!
@@ -55,6 +56,20 @@ sudo apt-get install mysql-client
 ```
 
 You can also safely skip this command from the terminal and use a MySQL GUI client to connect as shown in the next section.
+
+### :no_entry_sign: Page 53
+
+The text contains a statement that is technically incorrect about `docker-composer restart`:
+
+__Original text:__
+
+> For environment changes to take effect in a container, you need to restart it with `docker-compose restart`. After restarting, you should see something similar to [Figure 4.6](#figure-4-6).
+
+__Corrected:__
+
+> For environment changes to take effect in a container, you shut down the container and run `docker-compose up` again. After the new container starts, you should see something similar to [Figure 4.6](#figure-4-6).
+
+Changes to environment variables are not updated after restarting with `docker-compose restart`. See the [docker-compose restart](https://docs.docker.com/compose/reference/restart/) documentation for more info.
 
 ## Chapter 4: Development Tools
 
