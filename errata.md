@@ -59,7 +59,7 @@ You can also safely skip this command from the terminal and use a MySQL GUI clie
 
 ### :no_entry_sign: Page 53
 
-The text contains a statement that is technically incorrect about `docker-compose restart`:
+The text contains a statement that is technically incorrect about `docker-compose restart` on page 53 of the text:
 
 __Original text:__
 
@@ -67,7 +67,7 @@ __Original text:__
 
 __Corrected:__
 
-> For environment changes to take effect in a container, you shut down the container and run `docker-compose up` again. After the new container starts, you should see something similar to [Figure 4.6](#figure-4-6).
+> For environment changes to take effect in a container, you can run `docker-compose up` to recreate the container. After it starts, you should see something similar to [Figure 4.6](#figure-4-6).
 
 Changes to environment variables are not updated after restarting with `docker-compose restart`. See the [docker-compose restart](https://docs.docker.com/compose/reference/restart/) documentation for more info.
 
