@@ -57,21 +57,21 @@ sudo apt-get install mysql-client
 
 You can also safely skip this command from the terminal and use a MySQL GUI client to connect as shown in the next section.
 
-### :no_entry_sign: Page 53
+## Chapter 4: Development Tools
 
-The text contains a statement that is technically incorrect about `docker-compose restart` on page 53 of the text:
+### :no_entry_sign: Page 44 - Incorrect information about env changes
+
+The text contains a statement that is technically incorrect about restarting a container:
 
 __Original text:__
 
-> For environment changes to take effect in a container, you need to restart it with `docker-compose restart`. After restarting, you should see something similar to [Figure 4.6](#figure-4-6).
+> You should see "WORLD" printed when you echo the `$HELLO` environment variable inside of the running container. If you change the value of the variable, you should see the value reflected when you restart the container.
 
 __Corrected:__
 
-> For environment changes to take effect in a container, you can run `docker-compose up` to recreate the container. After it starts, you should see something similar to [Figure 4.6](#figure-4-6).
+> You should see "WORLD" printed when you echo the `$HELLO` environment variable inside of the running container. If you change the value of the variable, you should see the value reflected when stop the container and recreate it with `docker-compose up`.
 
 Changes to environment variables are not updated after restarting with `docker-compose restart`. See the [docker-compose restart](https://docs.docker.com/compose/reference/restart/) documentation for more info.
-
-## Chapter 4: Development Tools
 
 ### :bug: Listing 4.9: Adding an xdebug ini file
 
@@ -206,3 +206,17 @@ xdebug.remote_port = ${PHP_XDEBUG_REMOTE_PORT}
 xdebug.remote_enable = ${PHP_XDEBUG_REMOTE_ENABLE}
 xdebug.idekey = ${PHP_XDEBUG_IDEKEY}
 ```
+
+### :no_entry_sign: Page 53 - Incorrect information about env changes
+
+On page 53 of the text, a statement about seeing environment variable changes using `docker-compose restart`, which is technically incorrect:
+
+__Original text:__
+
+> For environment changes to take effect in a container, you need to restart it with `docker-compose restart`. After restarting, you should see something similar to [Figure 4.6](#figure-4-6).
+
+__Corrected:__
+
+> For environment changes to take effect in a container, you can run `docker-compose up` to recreate the container. After it starts, you should see something similar to [Figure 4.6](#figure-4-6).
+
+Changes to environment variables are not updated after restarting with `docker-compose restart`. See the [docker-compose restart](https://docs.docker.com/compose/reference/restart/) documentation for more info.
