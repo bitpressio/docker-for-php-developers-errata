@@ -55,7 +55,7 @@ You need to install the MySQL client on `nix systems, for example here's what it
 sudo apt-get install mysql-client
 ```
 
-You can also safely skip this command from the terminal and use a MySQL GUI client to connect as shown in the next section.
+You can also safely skip this command from the terminal and use a MySQL GUI client to connect as shown in the next section of Chapter 3.
 
 ## Chapter 4: Development Tools
 
