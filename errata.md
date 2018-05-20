@@ -42,7 +42,7 @@ Although the code only serves an example, it affect the final Dockerfile in the 
 
 ### :warning: Listing: 3.10: Connect to the MariaDB Database from the Host Machine
 
-Running the `mysql` terminal client command could be confusing if you don't have the MySQL client installed:
+Running the `mysql` terminal client command could be confusing if you don't have the MySQL client installed. Once you install the MySQL Client, you can safely run the following command:
 
 ```
 mysql -u root -h 127.0.0.1 -P13306 -ppassword
