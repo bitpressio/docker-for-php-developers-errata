@@ -40,6 +40,22 @@ RUN touch /tmp/foo
 
 Although the code only serves an example, it affect the final Dockerfile in the chapter.
 
+### :warning: Listing: 3.10: Connect to the MariaDB Database from the Host Machine
+
+Running the `mysql` terminal client command could be confusing if you don't have the MySQL client installed:
+
+```
+mysql -u root -h 127.0.0.1 -P13306 -ppassword
+```
+
+You need to install the MySQL client on `nix systems, for example here's what it might look like on Debian-based systems (i.e. Ubuntu):
+
+```
+sudo apt-get install mysql-client
+```
+
+You can also safely skip this command from the terminal and use a MySQL GUI client to connect as shown in the next section.
+
 ## Chapter 4: Development Tools
 
 ### :bug: Listing 4.9: Adding an xdebug ini file
