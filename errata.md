@@ -39,7 +39,7 @@ RUN touch /tmp/foo
     && touch /tmp/foo
 ```
 
-Although the code only serves an example, it affect the final Dockerfile in the chapter.
+Although the code only serves an example, it doesn't affect the final Dockerfile in the chapter.
 
 ### :warning: Listing: 3.10: Connect to the MariaDB Database from the Host Machine
 
