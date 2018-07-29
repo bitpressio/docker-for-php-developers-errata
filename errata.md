@@ -220,3 +220,15 @@ __Corrected:__
 > For environment changes to take effect in a container, you can run `docker-compose up` to recreate the container. After it starts, you should see something similar to [Figure 4.6](#figure-4-6).
 
 Changes to environment variables are not updated after restarting with `docker-compose restart`. See the [docker-compose restart](https://docs.docker.com/compose/reference/restart/) documentation for more info.
+
+## Chapter 8: Custom Commands
+
+:warning: On page `158` of the text (page `126` in the basic Leanpub PDF version) the text references an incorrect port number:
+
+__Original text:__
+
+> We are mapping port 80 to 8888 because our Caddyfile template uses port 80 instead of 2015 (the default)
+
+__Corrected:__
+
+We are mapping port 80 to ~~~8888~~~ __8080__ because our Caddyfile template uses port 80 instead of 2015 (the default).
