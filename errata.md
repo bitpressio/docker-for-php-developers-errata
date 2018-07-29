@@ -10,7 +10,7 @@ Issue map:
 
 ## Chapter 2: PHP Container Basics
 
-On Page `19` of the "fancy" PDF version, the text leading up to `Listing 2.13` has a grammatical error:
+:warning: On Page `19` of the "fancy" PDF version, the text leading up to `Listing 2.13` has a grammatical error:
 
 __Original Text:__
 
