@@ -8,6 +8,18 @@ Issue map:
 | :warning: | This isn't errata that breaks code listings, but perhaps is either confusing, grammatically incorrect, or has some other minor error or issue.     |
 | :no_entry_sign: | Errors, incorrect information, invalid statements |
 
+## Chapter 2: PHP Container Basics
+
+On Page `19` of the "fancy" PDF version, the text leading up to `Listing 2.13` has a grammatical error:
+
+__Original Text:__
+
+> We can now copy our php.ini file into the image at the correct path listed in the php --ini command by adding a COPY instruction in the DO (Listing 2.13)
+
+__Correction:__
+
+We can now copy our php.ini file into the image at the correct path listed in the php --ini command by adding a COPY instruction in the ~~~DO~~~ Dockerfile (Listing 2.13).
+
 
 ## Chapter 3: LAMP Baby!
 
