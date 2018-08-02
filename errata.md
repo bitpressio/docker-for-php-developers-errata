@@ -156,37 +156,6 @@ PHP_XDEBUG_IDEKEY=DOCKER_XDEBUG
 ```
 
 _Please note: The actual setting of `PHP_XDEBUG_REMOTE_HOST` is based on your own computer's local IP address. The listing example of my IP address is for example purposes._
-### :bug: Listing 4.11: Add Xdebug Environment Variables to `.docker.env.example`
-
-Related to the errata for Listing 4.9, the environment variables for XDebug settings need some updates and a new environment variable is set for the remote host setting.
-
-__Original code:__
-
-```ini
-# Xdebug
-PHP_XDEBUG_DEFAULT_ENABLE=1
-PHP_XDEBUG_REMOTE_AUTOSTART=1
-PHP_XDEBUG_REMOTE_CONNECT_BACK=1
-PHP_XDEBUG_REMOTE_PORT=9001
-PHP_XDEBUG_REMOTE_ENABLE=1
-PHP_XDEBUG_IDEKEY=DOCKER_XDEBUG
-```
-
-__Corrected:__
-
-```diff
-# Xdebug
-PHP_XDEBUG_DEFAULT_ENABLE=1
-PHP_XDEBUG_REMOTE_AUTOSTART=1
--PHP_XDEBUG_REMOTE_CONNECT_BACK=1
-+PHP_XDEBUG_REMOTE_CONNECT_BACK=0
-+PHP_XDEBUG_REMOTE_HOST="192.168.1.13"
-PHP_XDEBUG_REMOTE_PORT=9001
-PHP_XDEBUG_REMOTE_ENABLE=1
-PHP_XDEBUG_IDEKEY=DOCKER_XDEBUG
-```
-
-_Please note: The actual setting of `PHP_XDEBUG_REMOTE_HOST` is based on your own computer's local IP address. The listing example of my IP address is for example purposes._
 
 ### :bug: Listing 4.12: Use Environment Variables in the Xdebug INI File`
 
