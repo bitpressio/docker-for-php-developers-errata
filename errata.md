@@ -206,6 +206,16 @@ __Corrected:__
 
 Changes to environment variables are not updated after restarting with `docker-compose restart`. See the [docker-compose restart](https://docs.docker.com/compose/reference/restart/) documentation for more info.
 
+## Chapter 6: Web Servers and PHP-FPM
+
+On page 91 of ("fancy" version), the listing has an incorrect listing number and title:
+
+![](images/chapter-6-incorrect-listing-6.5.png)
+
+The corrected version (not released yet):
+
+![](images/chapter-6-corrected-listing-6.7.png)
+
 ## Chapter 8: Custom Commands
 
 :warning: On page `158` of the text (page `126` in the basic Leanpub PDF version) the text references an incorrect port number:
