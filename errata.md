@@ -7,6 +7,7 @@ Issue map:
 | :bug:     | This code doesn't work properly and/or has a bug in it |
 | :warning: | This isn't errata that breaks code listings, but perhaps is either confusing, grammatically incorrect, or has some other minor error or issue.     |
 | :no_entry_sign: | Errors, incorrect information, invalid statements |
+| 🕐  | Out of date information, no longer valid
 
 ## Chapter 2: PHP Container Basics
 
@@ -126,6 +127,16 @@ You can get your IP address a number of ways depending on your operating system.
 ipconfig getifaddr en0
 ipconfig getifaddr en1
 ```
+
+### 🕐 Missing Option in PHPStorm 2018
+
+Around page 49 (fancy version) the following text is no longer valid in newer versions of PhpStorm:
+
+> On the following screen, click the plus (+) button in the top left and select "PHP Web Application" to create a run configuration
+
+The correct selection should be **PHP Remote Debug** and the sentence should read:
+
+> On the following screen, click the plus (+) button in the top left and select "PHP Remote Debug" to create a run configuration.
 
 ### :bug: Listing 4.11: Add Xdebug Environment Variables to `.docker.env.example`
 
