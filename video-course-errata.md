@@ -4,7 +4,7 @@ Reported errata from the [Docker for PHP Developers](https://bitpress.io/docker-
 
 # 06 - Laravel - Setting up MySQL
 
-Unless you know to adjust the `DB_HOST` ENV value to `mysql`, you will get a "Connection Refused error when you try to run `php artisan db:migrate`. I never mention that the `.env` file should have the following database connection values in order to connect to the MySQL container:
+Unless you know to adjust the `DB_HOST` ENV value to `mysql`, you will get a "Connection Refused" error when you try to run `php artisan db:migrate`. I never mention that the `.env` file should have the following database connection values in order to connect to the MySQL container:
 
 ```env
 DB_CONNECTION=mysql
