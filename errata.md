@@ -113,7 +113,7 @@ xdebug.remote_autostart = 1
 -xdebug.remote_connect_back=1
 +xdebug.remote_host = 192.168.1.13
 +; Docker for Mac users can use:
-+; xdebug.remote_host = docker.for.mac.internal
++; xdebug.remote_host = host.docker.internal
 +xdebug.remote_connect_back = 0
 xdebug.remote_port = 9001
 xdebug.remote_enable = 1
@@ -163,8 +163,8 @@ PHP_XDEBUG_REMOTE_AUTOSTART=1
 -PHP_XDEBUG_REMOTE_CONNECT_BACK=1
 +PHP_XDEBUG_REMOTE_CONNECT_BACK=0
 +PHP_XDEBUG_REMOTE_HOST=192.168.1.13
-+# Docker for Mac users can use `docker.for.mac.internal`
-+# PHP_XDEBUG_REMOTE_HOST=docker.for.mac.internal
++# Docker for Mac users can use `host.docker.internal`
++# PHP_XDEBUG_REMOTE_HOST=host.docker.internal
 PHP_XDEBUG_REMOTE_PORT=9001
 PHP_XDEBUG_REMOTE_ENABLE=1
 PHP_XDEBUG_IDEKEY=DOCKER_XDEBUG
