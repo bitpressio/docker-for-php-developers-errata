@@ -1,4 +1,6 @@
-# Docker for PHP Developers Errata
+# Docker for PHP Developers Errata (v1)
+
+__Note: Errata reported in this document have been fixed in the latest version of the book. Download the latest from Gumroad or Leanpub depending on where you purchased the book.__
 
 Issue map:
 
